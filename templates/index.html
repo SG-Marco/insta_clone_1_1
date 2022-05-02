@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+    <!--css 파일 연결-->
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+    <meta name="theme-color" content="#7952b3">
+
+</head>
+<body>
+
+<header id="top_header">
+    <div class="upper_bar">
+        <div id="insta_logo">
+            <a href="#">
+                <img id="instagram_logo" src="https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png"
+                     alt="instagram">
+            </a>
+        </div>
+        <div id="search_bar">
+            <input aria-label="입력 검색" autocapitalize="none" class="XTCLo  d_djL  DljaH " placeholder="검색"
+                   type="text"
+                   value="">
+        </div>
+        <nav id="upper_right_nav">
+            <div id="upper_right_nav_div">
+                <div class="nav_icons">
+                    <a href="">
+                        <svg aria-label="홈" color="#262626" fill="#262626" height="24" role="img"
+                             viewBox="0 0 24 24"
+                             width="24">
+                            <path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav_icons">
+                    <a href="">
+                        <svg aria-label="Direct" color="#262626" fill="#262626" height="24" role="img"
+                             viewBox="0 0 24 24"
+                             width="24">
+                            <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22"
+                                  x2="9.218" y1="3" y2="10.083"></line>
+                            <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                     stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav_icons">
+                    <a href="">
+                        <svg aria-label="새로운 게시물" color="#262626" fill="#262626" height="24" role="img"
+                             viewBox="0 0 24 24"
+                             width="24">
+                            <path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
+                                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2"></path>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line>
+                            <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav_icons">
+                    <a href="">
+                        <svg aria-label="사람 찾기" color="#262626" fill="#262626" height="24" role="img"
+                             viewBox="0 0 24 24"
+                             width="24">
+                            <polygon fill="none"
+                                     points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                     stroke-width="2"></polygon>
+                            <polygon fill-rule="evenodd"
+                                     points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon>
+                            <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav_icons">
+                    <a href="">
+                        <svg aria-label="활동 피드" color="#262626" fill="#262626" height="24" role="img"
+                             viewBox="0 0 24 24"
+                             width="24">
+                            <path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="nav_icons">
+                    <a href="">
+                        <img class="nav_icons circle_img" id="profile_small" alt="sg_marco_la님의 프로필 사진" crossorigin="anonymous"
+                             data-testid="user-avatar" draggable="false"
+                             src="https://i0.wp.com/crackwizard.net/wp-content/uploads/2021/02/Disk-Drill-Pro-Crack-License-Key-Updated-Full-Free-Download.png?fit=256%2C256&ssl=1"
+                             class="icon_img"> </a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+</header>
+<main>
+    <div id="main_container">
+        <div id="main_container_1" class="vertical_array">
+            <div id="main_container_2" class="vertical_array">
+                <div id="post_area" class="vertical_array">
+                    <div id="post_1" class="card vertical_array post_post">
+                        <div id="post_title_area" class="card_tltle post_title_area_111">
+                            <div class="post_title_area_111_inside">
+                                <div class="vertical_array">
+                                    <canvas class="CfWVH" height="84" width="84"
+                                            style="position: absolute; top: -5px; left: -5px; width: 42px; height: 42px;"></canvas>
+                                    <a class="_2dbep qNELH kIKUG" href="/vousmevoyez/" tabindex="0"
+                                       style="width: 32px; height: 32px; display: block;"><img class="circle_img medium_size_img_111"
+                                                                                               alt="님의 프로필 사진"
+                                                                                               class=""
+                                                                                               crossorigin="anonymous"
+                                                                                               data-testid="user-avatar"
+                                                                                               draggable="false"
+                                                                                               src="https://i0.wp.com/crackwizard.net/wp-content/uploads/2021/02/Disk-Drill-Pro-Crack-License-Key-Updated-Full-Free-Download.png?fit=256%2C256&ssl=1"></a>
+                                </div>
+                                <div class="profile_id">
+                                    <div>Lorem ipsum dolor sit.</div>
+                                </div>
+                            </div>
+                            <div class="profile_menu_dotdotdot vertical_array">
+                                <!--                                <button class="my-modal-active-btn" id="my-modal-active-btn">-->
+                                    <div style="height: 24px; width: 24px;" class="my-modal-active-btn"
+                                         id="my-modal-active-btn">
+                                        <svg aria-label="옵션 더 보기" color="#262626" fill="#262626" height="24" role="img"
+                                             viewBox="0 0 24 24" width="24">
+                                            <circle cx="12" cy="12" r="1.5"></circle>
+                                            <circle cx="6" cy="12" r="1.5"></circle>
+                                            <circle cx="18" cy="12" r="1.5"></circle>
+                                        </svg>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="carousel-img post_main_picture_img"
+                                         src="https://images.pexels.com/photos/11662249/pexels-photo-11662249.jpeg?cs=srgb&dl=pexels-mathilde-langevin-11662249.jpg&fm=jpg"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="carousel-img post_main_picture_img"
+                                         src="https://images.pexels.com/photos/11086696/pexels-photo-11086696.jpeg?cs=srgb&dl=pexels-irina-demyanovskikh-11086696.jpg&fm=jpg"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item" >
+                                    <img class="carousel-img post_main_picture_img"
+                                         src="https://images.pexels.com/photos/8175058/pexels-photo-8175058.jpeg?cs=srgb&dl=pexels-lisa-fotios-8175058.jpg&fm=jpg"
+                                         class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body post_under_area vertical_array font_basic_font">
+                            <div class="post_under_area_1 vertical_array">
+                                <div class="like_icon_section">
+                                    <span id="like_icon" class="like_icon_etc">
+                                            <svg aria-label="좋아요" class="svg_like_icons_etc " color="#262626" fill="#262626"
+                                                 height="24" role="img" viewBox="0 0 24 24"
+                                                 width="24">
+                                                <path
+                                                        d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path>
+                                            </svg>
+                                    </span>
+                                    <span id="reply_icon" class="like_icon_etc">
+                                            <svg aria-label="댓글 달기" class="svg_like_icons_etc " color="#262626" fill="#262626"
+                                                 height="24" role="img" viewBox="0 0 24 24" width="24"><path
+                                                    d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none"
+                                                    stroke="currentColor" stroke-linejoin="round"
+                                                    stroke-width="2"></path></svg>
+
+                                    </span>
+                                    <span id="dm_icon" class="like_icon_etc">
+                                        <svg aria-label="게시물 공유" class="svg_like_icons_etc " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                                             width="24">
+                                            <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218"
+                                                  y1="3" y2="10.083"></line>
+                                            <polygon fill="none"
+                                                     points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                                     stroke="currentColor" stroke-linejoin="round"
+                                                     stroke-width="2"></polygon>
+                                        </svg>
+                                    </span>
+                                    <span id="tag_icon" class="like_icon_etc">
+                                        <div>
+
+                                            <svg aria-label="저장" class="svg_like_icons_etc " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                                                 width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor"
+                                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                                        </div>
+                                    </span>
+                                </div>
+                                <section class="like_text">
+                                    <div>
+                                        <div>
+                                            <div>좋아요 <span>134,188</span>개</div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="post_text_reply">
+                                    <div class="post_text_reply_inner vertical_array">
+                                        <div>
+                                        <span class="id_id">
+                                            masijacoke
+                                        </span>
+                                        <span class="content_content">
+                                            이번 영화 너무 재미있어요!
+                                        </span>
+                                        </div>
+                                        <div class="see_more_reply">댓글 100개 모두보기</div>
+                                        <div id="reply_list_1">
+                                            <div>
+                                        <span class="id_id">
+                                            masijacoke
+                                        </span>
+                                            <span>
+                                            이번 영화 너무 재미있어요!
+                                        </span>
+                                                </div>
+                                        </div>
+                                        <div>
+                                        <span class="id_id">
+                                            masijacoke
+                                        </span>
+                                            <span>
+                                            이번 영화 너무 재미있어요!
+                                        </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="reply_input_section font_basic_font">
+                                    <div>
+                                        <svg aria-label="이모티콘" class="_8-yf5 " color="#262626" fill="#262626"
+                                             height="24" role="img"
+                                             viewBox="0 0 24 24" width="24">
+                                            <path d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"></path>
+                                        </svg>
+                                    </div>
+                                    <textarea aria-label="댓글 달기..." data-testid="post-comment-text-area"
+                                              placeholder="댓글 달기..."
+                                              id="reply_1" class="reply_textarea" autocomplete="off"
+                                              autocorrect="off"></textarea>
+                                    <div id="post-btn-1">
+                                        <button class="post_button_111" onclick="reply_1()">게시</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi dolore ipsum laboriosam nobis, quam quibusdam sequi tempora vero voluptatibus. Quos ratione ullam veritatis! Accusantium adipisci alias at blanditiis cumque deleniti dolore dolorum ducimus earum ex facere fuga harum inventore libero magni maiores molestias nesciunt nisi, officiis quia quis quisquam quod repellat reprehenderit repudiandae saepe soluta tempore totam veritatis voluptate! Aut blanditiis dolore est et exercitationem iusto labore molestiae mollitia numquam pariatur repellendus unde, ut veritatis! Accusantium consectetur dignissimos enim eveniet fugit minus neque perferendis quidem, sunt voluptates! Adipisci animi beatae, cupiditate, doloremque eaque est fuga illum ipsam laboriosam nam natus neque, officiis possimus quibusdam quidem repellat ullam unde ut voluptas voluptatibus! Asperiores doloribus eligendi et exercitationem id, ipsa laboriosam laborum necessitatibus officiis. Consequuntur, cum distinctio eaque excepturi fugiat harum in, ipsa porro quae quibusdam quidem saepe, tenetur vel vero voluptas! Laborum quaerat reiciendis repudiandae. Aliquid consequuntur dolore doloremque est eum ex facere ipsum iste iusto modi omnis quam quas qui quo repellendus repudiandae, sit voluptatibus. Beatae dolores harum magni nesciunt nobis! Asperiores atque dolore dolorem doloribus eligendi enim excepturi facilis fuga fugiat fugit id illo impedit ipsa ipsum itaque iusto laborum, maxime minima numquam officia perspiciatis quasi, qui quibusdam quis reiciendis repellat repellendus repudiandae sed sequi sint sunt tenetur ullam voluptatibus? Commodi culpa ea molestias totam veniam, voluptates voluptatum! Autem commodi dicta dignissimos, dolores earum esse eveniet facilis fuga harum labore laboriosam nesciunt numquam qui quia quisquam rerum sint, tempore tenetur unde voluptate? A accusamus, accusantium ad distinctio dolor dolore, dolorum ea earum eius enim et impedit in libero maiores minima, minus nihil obcaecati odio odit possimus quasi qui quia quidem recusandae sint tempora ut voluptatum. Cum doloribus labore laborum molestias officia, placeat recusandae reiciendis repellat, reprehenderit similique soluta tempora velit, voluptate. Architecto at consectetur corporis, delectus doloribus enim harum ipsa iste laborum laudantium mollitia natus omnis quae quis quo ratione rem? Aspernatur blanditiis cupiditate dicta, dolorem esse eum excepturi exercitationem, libero magnam necessitatibus nisi odit quis quo, recusandae repellat tempore ut vero. Accusamus asperiores consectetur consequatur corporis debitis deleniti deserunt dolore doloremque doloribus eius facilis illo, in iure mollitia obcaecati provident quas, reprehenderit ullam voluptate voluptatibus. Eos hic ipsum neque quae quisquam quod ratione saepe vitae! At corporis earum inventore officia perferendis placeat possimus saepe? Consectetur corporis cupiditate dolorum eum exercitationem officia quisquam recusandae! Accusamus, consequatur deserunt facere hic labore reprehenderit totam ut. Accusamus atque, autem consequatur distinctio doloribus et expedita explicabo fuga fugiat id ipsum necessitatibus nisi numquam officiis perferendis praesentium, quis rem, soluta totam voluptate. Architecto cum eius fugiat harum illum ipsam optio provident quaerat quas, suscipit, tempora veniam vero. Distinctio eveniet praesentium quam reprehenderit? Aliquid at cum cumque dolores dolorum eos excepturi id impedit iure magnam neque odit perferendis quibusdam rem, ut? A, alias error esse, ex fugit iure libero, mollitia necessitatibus ratione reiciendis repellat sint tenetur voluptates! Adipisci aliquam architecto blanditiis deleniti dolorum ducimus eius esse eveniet hic illo ipsam minima minus nam necessitatibus officia qui quod rerum soluta unde, velit. Consectetur, quis voluptatibus.
+                            ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolorem esse eum, maxime nobis nostrum quas quis sunt voluptate. Culpa cum, delectus dignissimos dolore eaque, enim maxime minus modi neque qui quos recusandae repudiandae similique tenetur totam. Aliquam asperiores dolor ea et, expedita ipsam magni, natus necessitatibus non odio omnis praesentium qui quia recusandae saepe sapiente, sunt temporibus veniam voluptas voluptatibus! Architecto dicta distinctio harum numquam quae! Amet architecto, aut consectetur debitis delectus ea enim explicabo molestias necessitatibus nobis nulla odio officiis perferendis, quas tenetur ut vel veritatis voluptate voluptates voluptatum? Asperiores beatae earum eius illo maxime nisi reprehenderit, sunt.</p>
+                    </div>
+
+                </div>
+                <footer class="font_basic_font">
+                    <div id="my_profile_box" class="">
+                        <div id="my_profile_box_1">
+                            <a href="#">
+                                <img class="circle_img big_size_img" src="https://i0.wp.com/crackwizard.net/wp-content/uploads/2021/02/Disk-Drill-Pro-Crack-License-Key-Updated-Full-Free-Download.png?fit=256%2C256&ssl=1" alt="프로필 이미지">
+                            </a>
+
+                        </div>
+                        <div id="profile_id_name" class="vertical_array">
+                            <div id="profile_id_id">sg_marco_la</div>
+                            <div id="profile_name_name">나성근</div>
+                        </div>
+                        <div id="account_change_div">
+                            <button id="account_change">전환</button>
+                        </div>
+                    </div>
+                    <div id="recommendation_profile" class="vertical_array">
+                        <div id="recommendation_profile_1">
+                            <div id="recommendation_profile_2">회원님을 위한 추천</div>
+                            <div id="see_all_recommendation">모두 보기</div>
+
+                        </div>
+                        <div></div>
+                    </div>
+                    <div id="insta_info">
+                        <nav id="insta_info_1">
+                            <ul id="insta_info_2">
+                                <li class="insta_infos">소개</li>
+                                <li class="insta_infos">도움말</li>
+                                <li class="insta_infos">홍보 센터</li>
+                                <li class="insta_infos">API</li>
+                                <li class="insta_infos">채용 정보</li>
+                                <li class="insta_infos">개인정보처리방침</li>
+                                <li class="insta_infos">약관</li>
+                                <li class="insta_infos">위치</li>
+                                <li class="insta_infos">인기 계정</li>
+                                <li class="insta_infos">해시태그</li>
+                                <li class="insta_infos">언어</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+</body>
